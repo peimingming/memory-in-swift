@@ -245,25 +245,3 @@ print("print in 4 bytes :", Memory.memory(ofValue: &int, onAlignment: .four))
 print("print in 8 bytes :", Memory.memory(ofValue: &int, onAlignment: .eight))
 // print in 8 bytes : 0x000000000000000a
 ```
-
-
-
-### Function Type
-
-```swift
-func test() {
-    let a = 10
-    let b = 20
-    let c = a + b
-    print(c)
-}
-
-var fn = test
-
-show(value: &fn)
-// -------------- function: showFunction(), () -> () --------------
-// pointer: 0x00007ffeefbff480
-// memory: 0x0000000100007230 0x000000010322f9f0
-// size: 16
-```
-

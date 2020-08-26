@@ -122,18 +122,3 @@ func showBytes() {
 }
 
 showBytes()
-
-func showFunction() {
-    func test() {
-        let a = 10
-        let b = 20
-        let c = a + b
-        print(c)
-    }
-
-    var fn = test
-
-    show(value: &fn)
-}
-
-showFunction()
